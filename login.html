@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <!-- CSS Link Ends Here -->
+
+    <title>Food Menu</title>
+  </head>
+  <body>
+    <!-- Menubar Starts Here-->
+    <div class="menu_container">
+      <a href="/index.html">Home</a>
+      <a href="/menu.html">Menu</a>
+      <a href="/login.html">Login</a>
+      <a href="/register.html">Register</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+
+
+    <!-- Login Form -->
+    <div class="form-container">
+      <form action="login2.php" method="post" onsubmit="return validateLogin()">
+      
+        <div class="form-flex">
+          <label for="">Email:</label>
+        <input type="email" name="login-name" id="loginName" placeholder="Enter your email">
+
+        <p id="emailError" style="color: red; background-color: white;display: none;">Please enter your email.</p>
+
+        <label for="">Password:</label>
+        <input type="password" name="login-password" id="loginPassword" placeholder="Enter your password">
+
+        <p id="passError" style="color: red; background-color: white;display: none;">Please enter your password.</p>
+
+        <input type="submit" value="Login" name="login-button" id="btn_login" onclick="login()">
+        </div>
+      </form>
+    </div>
+
+
+  <!-- Footer Starts Here-->
+    <div class="footer_container">
+      <p>Website Created by <a href="#">Udit Sahani</a></p>
+    </div>
+<!-- Footer Ends Here -->
+
+<script src="/js/login.js"></script>
+  </body>
+</html>
